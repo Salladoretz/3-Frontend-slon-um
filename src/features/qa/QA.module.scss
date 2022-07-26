@@ -1,0 +1,13 @@
+@import '../../style.scss';
+
+.qa {
+    max-width: 1400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 200px;
+    border-bottom: 1px solid $mainFontColor;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+}

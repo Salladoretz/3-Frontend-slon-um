@@ -1,0 +1,107 @@
+@import '../../../style.scss';
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid $mainAccentColor;
+    box-shadow: 0px 5px 15px #14a77233;
+    border-radius: 40px;
+    min-width: 490px;
+
+    .price__top {
+        background: url('../../../assets/PriceTop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 292px;
+        min-height: 110px;
+        margin: -14px 0px 40px 0px;
+        padding-top: 21px;
+
+        p {
+            font-family: $mainFont;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.04em;
+            text-align: center;
+            color: $mainColor;
+        }
+    }
+
+    .price__middle {
+        margin-bottom: 40px;
+        padding: 0px 10px;
+
+        p {
+            font-size: 20px;
+            line-height: 24px;
+            color: $secondaryFontColor;
+        }
+
+        .price__prices {
+            display: flex;
+            margin: 30px 0px;
+
+            :nth-child(1) {
+                font-size: 96px;
+                line-height: 114px;
+                color: black;
+            }
+
+            :nth-child(2) {
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 36px;
+                letter-spacing: 0.05em;
+                color: black;
+                text-decoration: line-through black solid 2px;
+                margin: 16px 0px 0px 12px;
+            }
+        }
+    }
+
+    .price__bottom {
+        display: flex;
+        background: $mainAccentColor;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        width: 100%;
+        height: 78px;
+        align-items: center;
+        justify-content: space-around;
+
+        p {
+            color: $mainColor;
+            font-family: $mainFont;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.04em;
+        }
+
+        .price__bottomButtons {
+            display: flex;
+            gap: 20px;
+
+            button {
+                width: 35px;
+                height: 35px;
+                border: 2px solid white;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .price__buttonVK {
+                background: #4478E5;
+            }
+
+            .price__buttonOK {
+                background: #ff652f;
+            }
+        }
+
+    }
+}

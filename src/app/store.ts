@@ -1,11 +1,15 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import benefitsSlice from '../features/benefits/benefitsSlice';
 import counterReducer from '../features/counter/counterSlice';
+import priceSlice from '../features/priceAndOrder/price/priceSlice';
+import qaSlice from '../features/qa/qaSlice';
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    benefits: benefitsSlice
+    benefits: benefitsSlice,
+    price: priceSlice,
+    qa: qaSlice
   },
 });
 
