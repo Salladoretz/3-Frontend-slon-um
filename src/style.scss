@@ -1,0 +1,55 @@
+$mainFont: 'Nunito', sans-serif;
+$secondaryFont: 'Rubik', sans-serif;
+
+
+$mainColor: #ffffff;
+$mainAccentColor: #14a76c;
+$secondaryAccentColor: #ff652f;
+$mainFontColor: #1f1d2a;
+$secondaryFontColor: #4f5569;
+
+h1 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 122%;
+    color: $mainFontColor;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    color: $mainFontColor;
+}
+
+p {
+    font-family: $secondaryFont;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    color: $mainFontColor;
+}
+
+button {
+    padding: 10px;
+    width: 300px;
+    height: 60px;
+    background: $mainAccentColor;
+    box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+    border-radius: 15px;
+    border: none;
+    color: $mainColor;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.underline {
+    text-decoration: underline #ff946e wavy 5px;
+    text-underline-offset: 4px;
+}

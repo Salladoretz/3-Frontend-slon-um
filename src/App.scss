@@ -1,0 +1,8 @@
+@import './style';
+
+.App {
+    font-family: $mainFont;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

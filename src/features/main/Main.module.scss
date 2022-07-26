@@ -1,0 +1,100 @@
+@import '../../style';
+
+.main {
+    width: 100%;
+
+    .main__container {
+        display: flex;
+        justify-content: right;
+
+        .main__info {
+            max-width: 653px;
+            height: 810px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .main__header {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 5px;
+                }
+
+                p {
+                    font-family: $secondaryFont;
+                    font-weight: 500;
+                    font-size: 34.125px;
+                    line-height: 40px;
+                }
+
+                span {
+                    color: $secondaryAccentColor;
+                    font-weight: 400;
+                }
+            }
+
+            .main__headline {
+                margin-bottom: 80px;
+
+                .main__headlineTop {
+                    font-family: $secondaryFont;
+                    font-size: 15px;
+                    line-height: 166%;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    color: #9FA0A7;
+                }
+
+                .main__headlineMiddle {
+                    font-family: $secondaryFont;
+                    color: $secondaryFontColor;
+                    font-size: 18px;
+                    line-height: 150%;
+                    letter-spacing: 0.05em;
+                    margin: 40px 0px 60px 0px;
+                }
+
+                .main__headlineBottom {
+                    display: flex;
+                    gap: 60px;
+                }
+            }
+
+        }
+
+        .main__picture {
+            width: 900px;
+            height: 810px;
+            background: yellow;
+            margin: 0px 0px 200px 140px;
+        }
+    }
+
+    .main__description {
+        max-width: 790px;
+        margin: auto;
+        text-align: center;
+
+        p {
+            :nth-child(1) {
+                font-weight: 700;
+            }
+
+            :nth-child(2) {
+                color: $mainAccentColor;
+                font-weight: 500;
+            }
+
+            :nth-child(3) {
+                color: $mainAccentColor;
+                font-weight: 500;
+            }
+        }
+
+    }
+}

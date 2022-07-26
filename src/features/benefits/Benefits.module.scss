@@ -1,0 +1,24 @@
+@import '../../style.scss';
+
+.benefits {
+
+    margin-top: 200px;
+
+    .benefits__waves {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 602px;
+
+        .benefits__cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 58px;
+            max-width: 1395px;
+        }
+    }
+
+
+
+}
