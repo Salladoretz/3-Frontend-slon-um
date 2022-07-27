@@ -2,6 +2,7 @@ import React from 'react'
 import css from './Main.module.scss'
 import Logo from '../../assets/Logo.svg'
 import Timer from './timer/Timer'
+import Picture from './picture/Picture'
 
 const Main = () => {
     return (
@@ -22,7 +23,9 @@ const Main = () => {
                         </div>
                     </div>
                 </div>
-                <div className={css.main__picture}></div>
+                <div className={css.main__picture}>
+                    <Picture />
+                </div>
             </div>
             <div className={css.main__description}>
                 <p>Компания <span>СлонУм</span>  – проводит конкурс для детей, в котором могут участвовать ребята

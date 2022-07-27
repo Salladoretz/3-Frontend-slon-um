@@ -6,6 +6,7 @@
     .main__container {
         display: flex;
         justify-content: right;
+        margin-bottom: 200px;
 
         .main__info {
             max-width: 653px;
@@ -68,10 +69,8 @@
         }
 
         .main__picture {
-            width: 900px;
+            width: 882px;
             height: 810px;
-            background: yellow;
-            margin: 0px 0px 200px 140px;
         }
     }
 

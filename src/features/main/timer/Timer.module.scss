@@ -1,0 +1,54 @@
+@import '../../../style.scss';
+
+.timer {
+    display: flex;
+
+    .timer__digit {
+        width: 70px;
+        height: 60px;
+
+        :nth-child(1) {
+            font-family: $secondaryFont;
+            line-height: 38px;
+            text-align: center;
+            color: $secondaryAccentColor;
+        }
+
+        p {
+            font-family: $mainFont;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: $mainFontColor;
+        }
+
+        .timer__digit_grey {
+            color: #9fa0a7;
+        }
+    }
+
+    .timer__colon {
+        font-family: $mainFont;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 33px;
+        text-align: center;
+        color: $mainFontColor;
+        animation: fadeIn 1.5s infinite;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

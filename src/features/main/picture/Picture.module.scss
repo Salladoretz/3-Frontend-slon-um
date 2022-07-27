@@ -1,0 +1,484 @@
+@import '../../../style.scss';
+
+.picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 882px;
+    width: 100%;
+    min-height: 810px;
+
+    .picture__space {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 882px;
+        width: 100%;
+        min-height: 693px;
+        background-image: url('../../../assets/Space.png');
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: relative;
+        animation: fadeIn 2s;
+
+        .picture__spaceStars {
+            position: absolute;
+            top: 17px;
+            right: 42px;
+        }
+
+        .picture__spacePlane {
+            position: absolute;
+            bottom: 319px;
+            right: 30px;
+            animation: rotate45Decrease 12s infinite;
+        }
+
+        .picture__spaceElephant {
+            position: absolute;
+            top: 225px;
+            right: 157px;
+            animation: rotate45 12s infinite;
+        }
+
+        .picture__spaceClock {
+            position: absolute;
+            top: 220px;
+            left: 118px;
+            animation: rotate360Decrease linear 12s infinite reverse;
+        }
+
+        .picture__spaceBulb {
+            position: absolute;
+            bottom: 231px;
+            right: 283px;
+            animation: rotate90 12s infinite;
+        }
+
+        .picture__spacePlanet1 {
+            position: absolute;
+            top: 82px;
+            left: 209px;
+            animation: leftDown 12s infinite;
+        }
+
+        .picture__spacePlanet2 {
+            position: absolute;
+            top: 134px;
+            left: 427px;
+            animation: rightLeft 12s infinite;
+        }
+
+        .picture__spacePlanet3 {
+            position: absolute;
+            bottom: 182px;
+            left: 318px;
+            animation: rotate45 12s infinite;
+        }
+
+        .picture__spaceAtom {
+            position: absolute;
+            top: 132px;
+            left: 75px;
+            animation: rotate30Decrease 12s infinite;
+        }
+
+        .picture__spaceZero {
+            position: absolute;
+            top: 260px;
+            right: 110px;
+            font-family: 'Inter';
+            font-size: 26px;
+            line-height: 31px;
+            color: #fcc947;
+            transform: matrix(0.97, -0.25, 0.25, 0.97, 0, 0);
+        }
+
+        .picture__spaceOne {
+            position: absolute;
+            top: 209px;
+            right: 44px;
+            font-family: 'Inter';
+            font-size: 26px;
+            line-height: 31px;
+            color: #E075AD;
+            transform: matrix(0.87, 0.5, -0.5, 0.87, 0, 0);
+        }
+
+        .picture__spaceSegmentation {
+            position: absolute;
+            top: 185px;
+            right: 332px;
+            animation: growthVanish 12s infinite;
+        }
+
+        .picture__spacePlus {
+            position: absolute;
+            top: 241px;
+            right: 420px;
+            animation: growthVanish 12s infinite;
+            animation-delay: -6s;
+        }
+
+        .picture__spacePalette {
+            position: absolute;
+            top: 119px;
+            right: 89px;
+            animation: rotate360 12s infinite;
+        }
+
+        .picture__spaceRocket {
+            position: absolute;
+            bottom: 200px;
+            left: 88px;
+            animation: upDown 12s infinite;
+        }
+
+        .picture__spaceBalloon {
+            position: absolute;
+            top: 280px;
+            left: 359px;
+            animation: downUp 12s infinite;
+        }
+
+        button {
+            width: 180px;
+            height: 44px;
+            margin-top: 33px;
+            border: 1px solid $mainFontColor;
+            border-radius: 15px;
+            background: $mainColor;
+            color: $mainFontColor;
+            font-weight: 400;
+        }
+    }
+
+    .picture__girl {
+
+        .picture__girlGroup1 {
+            position: absolute;
+            top: 559.25px;
+            right: 297.55px;
+            z-index: 2;
+        }
+
+        .picture__girlGroup2 {
+            position: absolute;
+            top: 541.94px;
+            right: 269.88px;
+            z-index: 1;
+        }
+
+        .picture__girlGroup3 {
+            position: absolute;
+            top: 482.9px;
+            right: 237.42px;
+        }
+
+        .picture__girlGroup4 {
+            position: absolute;
+            top: 473.4px;
+            right: 374.17px;
+        }
+
+        .picture__girlGroup5 {
+            position: absolute;
+            top: 681.19px;
+            right: 345.03px;
+            z-index: 7;
+        }
+
+        .picture__girlGroup6 {
+            position: absolute;
+            top: 638.53px;
+            right: 248.99px;
+            z-index: 4;
+        }
+
+        .picture__girlGroup7 {
+            position: absolute;
+            top: 626.99px;
+            right: 302px;
+            z-index: 3;
+        }
+
+        .picture__girlGroup8 {
+            position: absolute;
+            top: 695.73px;
+            right: 247.55px;
+            z-index: 2;
+        }
+
+        .picture__girlGroup9 {
+            position: absolute;
+            top: 728.55px;
+            right: 237.4px;
+            z-index: 1;
+        }
+
+        .picture__girlHand {
+            position: absolute;
+            top: 683.99px;
+            right: 359.25px;
+            z-index: 6;
+        }
+
+        .picture__girlList {
+            position: absolute;
+            top: 651.4px;
+            right: 358.06px;
+            z-index: 5;
+        }
+
+        .picture__girlPen {
+            position: absolute;
+            top: 630px;
+            right: 402.31px;
+            z-index: 4;
+        }
+
+        .picture__girlPaperPlanes {
+            position: absolute;
+            top: 716px;
+            right: 525px;
+
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate45 {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotate45Decrease {
+    0% {
+        transform: rotate(45deg);
+        width: 60px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        width: 110px;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        width: 60px;
+    }
+}
+
+@keyframes rotate360Decrease {
+    0% {
+        transform: rotate(0deg);
+        width: 40px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        width: 65px;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        width: 40px;
+    }
+}
+
+@keyframes rotate90 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes leftDown {
+    0% {
+        top: 82px;
+        left: 209px;
+    }
+
+    50% {
+        top: 100px;
+        left: 159px;
+    }
+
+    100% {
+        top: 82px;
+        left: 209px;
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        left: 427px;
+    }
+
+    50% {
+        left: 477px;
+    }
+
+    100% {
+        left: 427px;
+    }
+}
+
+@keyframes rotate30Decrease {
+    0% {
+        transform: rotate(0deg);
+        width: 15px;
+    }
+
+    50% {
+        transform: rotate(30deg);
+        width: 50px;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        width: 15px;
+    }
+}
+
+@keyframes growthVanish {
+    0% {
+        width: 10px;
+        opacity: 1;
+    }
+
+    30% {
+        width: 35px;
+        opacity: 1;
+    }
+
+    60% {
+        width: 35px;
+        opacity: 0;
+    }
+
+    100% {
+        width: 10px;
+        opacity: 0;
+    }
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes upDown {
+    0% {
+        bottom: 200px;
+    }
+
+    50% {
+        bottom: 250px;
+    }
+
+    100% {
+        bottom: 200px;
+    }
+}
+
+@keyframes downUp {
+    0% {
+        top: 280px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    100% {
+        top: 280px;
+    }
+}
+
+@keyframes pen1 {
+    0% {
+        right: 402.31px;
+        transform: rotate(0deg);
+    }
+
+    70% {
+        right: 370px;
+        transform: rotate(60deg);
+    }
+
+    85% {
+        right: 370px;
+        transform: rotate(30deg);
+    }
+
+    100% {
+        right: 370px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes pen2 {
+    0% {
+
+        transform: rotate(0deg);
+    }
+
+    70% {
+
+        transform: rotate(60deg);
+    }
+
+    85% {
+
+        transform: rotate(30deg);
+    }
+
+    100% {
+
+        transform: rotate(45deg);
+    }
+}
