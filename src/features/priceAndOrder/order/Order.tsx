@@ -1,6 +1,8 @@
 import React from 'react'
 import css from './Order.module.scss'
-import PaperPlanes from '../../../assets/PaperPlanes.svg'
+import PaperPlane1 from '../../../assets/PaperPlane1.svg'
+import Shadow from '../../../assets/Shadow.svg'
+import PaperPlane2 from '../../../assets/PaperPlane2.svg'
 
 const Order = () => {
     return (
@@ -19,9 +21,12 @@ const Order = () => {
                     <a href="/"> Условиями конкурса</a> и
                     <a href="/"> Политикой обработки данных</a></p>
             </div>
-            <div className={css.order__accept}>
+            <div className={css.paperPlanes}>
                 <button>Участвовать</button>
-                <img src={PaperPlanes} alt="" />
+                <img className={css.paperPlanes__plane1} src={PaperPlane1} alt="" />
+                <img className={css.paperPlanes__shadow} src={Shadow} alt="" />
+                <img className={css.paperPlanes__plane2} src={PaperPlane2} alt="" />
+                <img className={css.paperPlanes__plane3} src={PaperPlane1} alt="" />
             </div>
         </div>
     )

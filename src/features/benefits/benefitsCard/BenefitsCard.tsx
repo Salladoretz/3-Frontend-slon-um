@@ -11,7 +11,9 @@ const BenefitsCard: React.FC<benefitCardState> = ({ icon, text, decoratedWords }
             <img src={icon} alt='' />
             <p>
                 {text.split(' ').map(item => decoratedWords.includes(item)
-                    ? <span className={css.benefitCard_decoratedWords}>{item} </span>
+                    ? <a href="/">
+                        <span className={css.benefitCard_decoratedWords}>{item} </span>
+                    </a>
                     : <span>{item} </span>)}
             </p>
         </div>

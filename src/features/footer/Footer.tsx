@@ -12,9 +12,15 @@ const Footer = () => {
                 <div className={css.footer__smm}>
                     <p>Наши соцсети:</p>
                     <div className={css.footer__smmButtons}>
-                        <img src={Telegram} alt="" />
-                        <img src={SMM} alt="" />
-                        <img src={VK_blue} alt="" />
+                        <a href="/">
+                            <img src={Telegram} alt="" />
+                        </a>
+                        <a href="/">
+                            <img src={SMM} alt="" />
+                        </a>
+                        <a href="/">
+                            <img src={VK_blue} alt="" />
+                        </a>
                     </div>
                 </div>
                 <div className={css.footer__links}>

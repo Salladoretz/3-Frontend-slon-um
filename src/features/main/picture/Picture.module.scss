@@ -22,6 +22,20 @@
         position: relative;
         animation: fadeIn 2s;
 
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            25% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
         .picture__spaceStars {
             position: absolute;
             top: 17px;
@@ -32,56 +46,194 @@
             position: absolute;
             bottom: 319px;
             right: 30px;
-            animation: rotate45Decrease 12s infinite;
+            animation: animationPlane 12s infinite;
+
+            @keyframes animationPlane {
+                0% {
+                    transform: rotate(45deg) scale(0.5);
+                }
+
+                50% {
+                    transform: rotate(0deg) scale(1);
+                }
+
+                100% {
+                    transform: rotate(45deg) scale(0.5);
+                }
+            }
         }
 
         .picture__spaceElephant {
             position: absolute;
             top: 225px;
             right: 157px;
-            animation: rotate45 12s infinite;
+            animation: animationElephant 12s infinite;
+
+            @keyframes animationElephant {
+                0% {
+                    right: 157px;
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    right: 147px;
+                    transform: rotate(41deg);
+                }
+
+                100% {
+                    right: 157px;
+                    transform: rotate(0deg);
+                }
+            }
         }
 
         .picture__spaceClock {
             position: absolute;
             top: 220px;
             left: 118px;
-            animation: rotate360Decrease linear 12s infinite reverse;
+            animation: animationClock ease 12s infinite;
+
+            @keyframes animationClock {
+                0% {
+                    transform: scale(0.7) rotate(0deg);
+                    animation-timing-function: ease-in;
+                }
+
+                50% {
+                    transform: scale(1) rotate(-180deg);
+                    animation-timing-function: ease-out;
+                }
+
+                100% {
+                    transform: scale(0.7) rotate(-359deg);
+                }
+            }
         }
 
         .picture__spaceBulb {
             position: absolute;
             bottom: 231px;
             right: 283px;
-            animation: rotate90 12s infinite;
+            animation: animationBulb 12s infinite;
+
+            @keyframes animationBulb {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                10.8% {
+                    transform: rotate(0deg);
+                }
+
+                40% {
+                    transform: rotate(40deg);
+                }
+
+                69.2% {
+                    transform: rotate(-45deg);
+                }
+
+                85.8% {
+                    transform: rotate(-25deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
         }
 
         .picture__spacePlanet1 {
             position: absolute;
             top: 82px;
             left: 209px;
-            animation: leftDown 12s infinite;
+            animation: animationPlanet1 12s infinite;
+
+            @keyframes animationPlanet1 {
+                0% {
+                    top: 82px;
+                    left: 209px;
+                }
+
+                50% {
+                    top: 102px;
+                    left: 159px
+                }
+
+                100% {
+                    top: 82px;
+                    left: 209px;
+                }
+            }
         }
 
         .picture__spacePlanet2 {
             position: absolute;
             top: 134px;
             left: 427px;
-            animation: rightLeft 12s infinite;
+            animation: animationPlanet2 12s infinite;
+
+            @keyframes animationPlanet2 {
+                0% {
+                    left: 427px;
+                }
+
+                7% {
+                    left: 427px;
+                }
+
+                50% {
+                    left: 457px
+                }
+
+                100% {
+                    left: 427px;
+                }
+            }
         }
 
         .picture__spacePlanet3 {
             position: absolute;
             bottom: 182px;
             left: 318px;
-            animation: rotate45 12s infinite;
+            animation: animationPlanet3 12s infinite;
+
+            @keyframes animationPlanet3 {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                50% {
+                    transform: rotate(-45deg);
+                }
+
+                100% {
+                    transform: rotate(0deg);
+                }
+            }
         }
 
         .picture__spaceAtom {
             position: absolute;
             top: 132px;
             left: 75px;
-            animation: rotate30Decrease 12s infinite;
+            animation: animationAtom 12s infinite;
+
+            @keyframes animationAtom {
+                0% {
+                    transform: rotate(0deg) scale(1);
+                    animation-timing-function: ease-in;
+                }
+
+                50% {
+                    transform: rotate(45deg) scale(0);
+                    animation-timing-function: ease-out;
+                }
+
+                100% {
+                    transform: rotate(0deg) scale(1);
+                }
+            }
         }
 
         .picture__spaceZero {
@@ -110,36 +262,129 @@
             position: absolute;
             top: 185px;
             right: 332px;
-            animation: growthVanish 12s infinite;
+            animation: animationSegmentation 12s infinite;
+
+            @keyframes animationSegmentation {
+                0% {
+                    transform: scale(0.5);
+                    animation-timing-function: ease-out;
+                }
+
+                25% {
+                    transform: scale(1);
+                    opacity: 1;
+                    animation-timing-function: ease-in;
+                }
+
+                50% {
+                    transform: scale(1.2);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
         }
 
         .picture__spacePlus {
             position: absolute;
             top: 241px;
             right: 420px;
-            animation: growthVanish 12s infinite;
-            animation-delay: -6s;
+            animation: animationPlus 12s infinite;
+
+            @keyframes animationPlus {
+                0% {
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                    animation-timing-function: ease-out;
+                }
+
+                75% {
+                    transform: scale(1);
+                    opacity: 1;
+                    animation-timing-function: ease-in;
+                }
+
+                100% {
+                    transform: scale(1.2);
+                    opacity: 0;
+                }
+            }
         }
 
         .picture__spacePalette {
             position: absolute;
             top: 119px;
             right: 89px;
-            animation: rotate360 12s infinite;
+            animation: animationPalette 12s infinite;
+
+            @keyframes animationPalette {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                25% {
+                    transform: rotate(0deg);
+                }
+
+                83% {
+                    transform: rotate(359deg);
+                }
+
+                100% {
+                    transform: rotate(359deg);
+                }
+
+            }
         }
 
         .picture__spaceRocket {
             position: absolute;
             bottom: 200px;
             left: 88px;
-            animation: upDown 12s infinite;
+            animation: animationRocket 12s ease-out infinite;
+
+            @keyframes animationRocket {
+                0% {
+                    bottom: 200px;
+                }
+
+                66% {
+                    bottom: 270px;
+                }
+
+                100% {
+                    bottom: 200px;
+                }
+
+            }
         }
 
         .picture__spaceBalloon {
             position: absolute;
             top: 280px;
             left: 359px;
-            animation: downUp 12s infinite;
+            animation: animationBalloon 12s infinite;
+
+            @keyframes animationBalloon {
+                0% {
+                    top: 280px;
+                }
+
+                50% {
+                    top: 314px;
+                }
+
+                100% {
+                    top: 280px;
+                }
+
+            }
         }
 
         button {
@@ -236,6 +481,32 @@
             top: 630px;
             right: 402.31px;
             z-index: 4;
+            animation: animationPen 4.5s cubic-bezier(1, -2, 1, 1.5) infinite;
+
+            @keyframes animationPen {
+                0% {
+                    top: 630px;
+                    transform: rotate(0deg);
+                }
+
+                33% {
+                    top: 630px;
+                    right: 395px;
+                    transform: rotate(42deg);
+                }
+
+                66% {
+                    top: 622px;
+                    right: 402px;
+                    transform: rotate(-6deg);
+                }
+
+                100% {
+                    top: 630px;
+                    right: 402.31px;
+                    transform: rotate(0deg);
+                }
+            }
         }
 
         .picture__girlPaperPlanes {
@@ -244,241 +515,5 @@
             right: 525px;
 
         }
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes rotate45 {
-    0% {
-        transform: rotate(45deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes rotate45Decrease {
-    0% {
-        transform: rotate(45deg);
-        width: 60px;
-    }
-
-    50% {
-        transform: rotate(0deg);
-        width: 110px;
-    }
-
-    100% {
-        transform: rotate(45deg);
-        width: 60px;
-    }
-}
-
-@keyframes rotate360Decrease {
-    0% {
-        transform: rotate(0deg);
-        width: 40px;
-    }
-
-    50% {
-        transform: rotate(180deg);
-        width: 65px;
-    }
-
-    100% {
-        transform: rotate(360deg);
-        width: 40px;
-    }
-}
-
-@keyframes rotate90 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(-45deg);
-    }
-
-    50% {
-        transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(45deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes leftDown {
-    0% {
-        top: 82px;
-        left: 209px;
-    }
-
-    50% {
-        top: 100px;
-        left: 159px;
-    }
-
-    100% {
-        top: 82px;
-        left: 209px;
-    }
-}
-
-@keyframes rightLeft {
-    0% {
-        left: 427px;
-    }
-
-    50% {
-        left: 477px;
-    }
-
-    100% {
-        left: 427px;
-    }
-}
-
-@keyframes rotate30Decrease {
-    0% {
-        transform: rotate(0deg);
-        width: 15px;
-    }
-
-    50% {
-        transform: rotate(30deg);
-        width: 50px;
-    }
-
-    100% {
-        transform: rotate(0deg);
-        width: 15px;
-    }
-}
-
-@keyframes growthVanish {
-    0% {
-        width: 10px;
-        opacity: 1;
-    }
-
-    30% {
-        width: 35px;
-        opacity: 1;
-    }
-
-    60% {
-        width: 35px;
-        opacity: 0;
-    }
-
-    100% {
-        width: 10px;
-        opacity: 0;
-    }
-}
-
-@keyframes rotate360 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes upDown {
-    0% {
-        bottom: 200px;
-    }
-
-    50% {
-        bottom: 250px;
-    }
-
-    100% {
-        bottom: 200px;
-    }
-}
-
-@keyframes downUp {
-    0% {
-        top: 280px;
-    }
-
-    50% {
-        top: 300px;
-    }
-
-    100% {
-        top: 280px;
-    }
-}
-
-@keyframes pen1 {
-    0% {
-        right: 402.31px;
-        transform: rotate(0deg);
-    }
-
-    70% {
-        right: 370px;
-        transform: rotate(60deg);
-    }
-
-    85% {
-        right: 370px;
-        transform: rotate(30deg);
-    }
-
-    100% {
-        right: 370px;
-        transform: rotate(45deg);
-    }
-}
-
-@keyframes pen2 {
-    0% {
-
-        transform: rotate(0deg);
-    }
-
-    70% {
-
-        transform: rotate(60deg);
-    }
-
-    85% {
-
-        transform: rotate(30deg);
-    }
-
-    100% {
-
-        transform: rotate(45deg);
     }
 }

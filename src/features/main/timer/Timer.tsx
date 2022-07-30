@@ -12,16 +12,16 @@ const Timer = () => {
     const minutes = Math.floor(diff / 1000 / 60) % 60;
 
     const twoDigit = (digit: number) => { return digit.toString().padStart(2, '0') }
-    /*
-        useEffect(() => {
-            let interval = setInterval(() => {
-                if (diff > 1000) {
-                    setDiff(diff - 1000)
-                }
-            }, 1000)
-            return () => clearInterval(interval)
-        }, [diff])
-    */
+
+    useEffect(() => {
+        let interval = setInterval(() => {
+            if (diff > 1000) {
+                setDiff(diff - 1000)
+            }
+        }, 1000)
+        return () => clearInterval(interval)
+    }, [diff])
+
     return (
         <div className={css.timer}>
             <div className={css.timer__digit}>

@@ -1,3 +1,188 @@
+@import '../../style.scss';
+
 .plan {
     min-height: 907px;
+    max-width: 1923px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: url('../../assets/Sky.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .plan__container {
+        margin-top: 134px;
+        width: 1301px;
+        height: 444px;
+        position: relative;
+        background-image: url('../../assets/DottedLine.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .plan__wrapper {
+            display: flex;
+            position: relative;
+
+            .plan__point {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: $secondaryAccentColor;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $secondaryFont;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 60px;
+                color: $mainColor;
+                margin-right: 40px;
+            }
+
+            p {
+                font-family: $secondaryFont;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.04em;
+                color: $secondaryFontColor;
+            }
+
+            span {
+                color: $mainAccentColor;
+            }
+
+            .plan__comment1 {
+                width: 225px;
+                animation: animationComment1 3s infinite;
+                animation-timing-function: step-end;
+
+                @keyframes animationComment1 {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    10% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .plan__comment2 {
+                width: 246px;
+                animation: animationComment2 3s infinite;
+                animation-timing-function: step-end;
+
+                @keyframes animationComment2 {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    50% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .plan__comment3 {
+                width: 268px;
+                animation: animationComment3 3s infinite;
+                animation-timing-function: step-end;
+
+                @keyframes animationComment3 {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    70% {
+                        opacity: 1;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+
+        .plan__point1 {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+        }
+
+        .plan__point2 {
+            position: absolute;
+            top: 188px;
+            left: 450px;
+        }
+
+        .plan__point3 {
+            position: absolute;
+            bottom: -10px;
+            right: 10px;
+        }
+    }
+
+    .plan__paperPlane {
+        position: absolute;
+        transform: scale(-1, 1);
+        animation: animationPaperPlane 3s infinite;
+
+
+        @keyframes animationPaperPlane {
+            0% {
+                top: 50px;
+                left: 0px;
+                transform: scale(-1, 1);
+                animation-timing-function: ease-out;
+                opacity: 0;
+            }
+
+            10% {
+                top: 120px;
+                left: 280px;
+                transform: scale(-1, 1);
+                animation-timing-function: linear;
+                opacity: 1;
+            }
+
+            50% {
+                top: 350px;
+                left: 720px;
+                transform: scale(-1, 1);
+                animation-timing-function: linear;
+            }
+
+            70% {
+                top: 550px;
+                left: 1200px;
+                transform: scale(-1, 1) rotate(0deg);
+                animation-timing-function: linear;
+            }
+
+            80% {
+                top: 550px;
+                left: 1500px;
+                transform: scale(-1, 1) rotate(30deg);
+                animation-timing-function: ease-out;
+            }
+
+            100% {
+                top: 350px;
+                left: 1700px;
+                transform: scale(-1, 1) rotate(30deg);
+            }
+        }
+    }
 }
