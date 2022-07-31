@@ -5,7 +5,7 @@ import css from './QA.module.scss'
 
 const QA = () => {
 
-    const qaList = useAppSelector(state => state.qa)
+    const qaList = useAppSelector(state => state.data.qa)
 
     return (
         <div className={css.qa}>

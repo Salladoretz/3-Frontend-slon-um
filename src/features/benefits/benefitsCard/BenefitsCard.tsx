@@ -1,5 +1,5 @@
 import React from 'react'
-import { benefitCardState } from '../benefitsSlice'
+import { benefitCardState } from '../../../app/dataSlice'
 import css from './BenefitsCard.module.scss'
 
 

@@ -5,7 +5,7 @@ import BenefitsCard from './benefitsCard/BenefitsCard'
 
 const Benefits = () => {
 
-    const benefits = useAppSelector(state => state.benefits)
+    const benefits = useAppSelector(state => state.data.benefits)
 
     return (
         <div className={css.benefits}>

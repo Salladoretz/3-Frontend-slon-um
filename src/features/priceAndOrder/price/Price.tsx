@@ -6,7 +6,8 @@ import OK from '../../../assets/OK.svg'
 
 const Price = () => {
 
-    const prices = useAppSelector(state => state.price)
+    const prices = useAppSelector(state => state.data.prices)
+    const contacts = useAppSelector(state => state.data.contacts)
 
     return (
         <div className={css.price}>
@@ -23,13 +24,13 @@ const Price = () => {
             </div>
             <div className={css.price__bottom}>
                 <p>Получить скидку:</p>
-                <div className={css.price__bottomButtons}>
-                    <button className={css.price__buttonVK}>
-                        <img src={VK} alt="" />
-                    </button>
-                    <button className={css.price__buttonOK}>
-                        <img src={OK} alt="" />
-                    </button>
+                <div className={css.price__SMM}>
+                    <a href={contacts.telegram}>
+                        <img className={css.price__SMM_VK} src={VK} alt="" />
+                    </a>
+                    <a href={contacts.vk}>
+                        <img className={css.price__SMM_OK} src={OK} alt="" />
+                    </a>
                 </div>
             </div>
         </div>

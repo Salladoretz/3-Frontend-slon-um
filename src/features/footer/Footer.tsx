@@ -2,24 +2,29 @@ import React from 'react'
 import css from './Footer.module.scss'
 import Telegram from '../../assets/Telegram.svg'
 import SMM from '../../assets/SMM.svg'
-import VK_blue from '../../assets/VK_blue.svg'
+import VK from '../../assets/VK.svg'
 import Shevron_up from '../../assets/Shevron_up.svg'
+import { useAppSelector } from '../../app/hooks'
+
 
 const Footer = () => {
+
+    const contacts = useAppSelector(state => state.data.contacts)
+
     return (
         <div className={css.footer}>
             <div className={css.footer__content}>
                 <div className={css.footer__smm}>
                     <p>Наши соцсети:</p>
-                    <div className={css.footer__smmButtons}>
-                        <a href="/">
+                    <div className={css.footer__smmLinks}>
+                        <a href={contacts.telegram}>
                             <img src={Telegram} alt="" />
                         </a>
                         <a href="/">
                             <img src={SMM} alt="" />
                         </a>
-                        <a href="/">
-                            <img src={VK_blue} alt="" />
+                        <a href={contacts.vk}>
+                            <img src={VK} alt="" />
                         </a>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ import css from './Timer.module.scss'
 
 const Timer = () => {
 
-    const deadline = useAppSelector(state => state.timer.deadline)
+    const deadline = useAppSelector(state => state.data.deadline)
 
     const [diff, setDiff] = useState(+deadline - Date.now())
     const days = Math.floor(diff / 1000 / 60 / 60 / 24);

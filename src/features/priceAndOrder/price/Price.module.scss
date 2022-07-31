@@ -79,29 +79,22 @@
             letter-spacing: 0.04em;
         }
 
-        .price__bottomButtons {
+        .price__SMM {
             display: flex;
             gap: 20px;
 
-            button {
+            .price__SMM_VK {
                 width: 35px;
                 height: 35px;
                 border: 2px solid white;
                 border-radius: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
+                background: white;
             }
 
-            .price__buttonVK {
-                background: #4478E5;
-            }
-
-            .price__buttonOK {
-                background: #ff652f;
+            .price__SMM_OK {
+                width: 35px;
+                height: 35px;
             }
         }
-
     }
 }

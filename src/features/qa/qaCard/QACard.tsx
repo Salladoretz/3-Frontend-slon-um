@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { qaState } from '../qaSlice'
+import { qaState } from '../../../app/dataSlice'
 import css from './QACard.module.scss'
 import Cross from '../../../assets/Cross.svg'
 
