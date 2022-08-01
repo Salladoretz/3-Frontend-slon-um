@@ -1,7 +1,6 @@
 import React from 'react'
 import css from './Price.module.scss'
 import { useAppSelector } from '../../../app/hooks'
-import PriceTop from '../../../assets/PriceTop.svg'
 import VK from '../../../assets/VK.svg'
 import OK from '../../../assets/OK.svg'
 
