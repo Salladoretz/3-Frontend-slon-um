@@ -1,0 +1,73 @@
+@import './style.scss';
+
+.App {
+    --mainFont: var(--mainFontRoot);
+    --secondaryFont: var(--secondaryFontRoot);
+    --mainFontColor: var(--mainFontColorRoot);
+    --secondaryFontColor: var(--secondaryFontColorRoot);
+
+    --mainColor: var(--mainColorRoot);
+    --mainAccentColor: var(--mainAccentColorRoot);
+    --secondaryAccentColor: var(--secondaryAccentColorRoot);
+
+
+    font-family: var(--mainFont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    h1 {
+        font-family: var(--mainFont);
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 122%;
+        color: var(--mainFontColor);
+    }
+
+    h2 {
+        font-family: var(--mainFont);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.04em;
+        color: var(--mainFontColor);
+    }
+
+    p {
+        font-family: var(--secondaryFont);
+        font-size: 22px;
+        line-height: 150%;
+        letter-spacing: 0.05em;
+        color: var(--mainFontColor);
+    }
+
+    button {
+        padding: 10px;
+        width: 300px;
+        height: 60px;
+        background: var(--mainAccentColor);
+        box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
+        border-radius: 15px;
+        border: none;
+        color: var(--mainColor);
+        font-family: var(--secondaryFont);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+    }
+
+    input {
+        height: 60px;
+        border: 1px solid #9FA0A7;
+        border-radius: 15px;
+        padding-left: 20px;
+        font-family: var(--secondaryFont);
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: var(--secondaryFontColor);
+    }
+}
