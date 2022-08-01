@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1ee9750f.css",
-    "main.js": "/static/js/main.6a881c93.js",
+    "main.css": "/static/css/main.03b0ce04.css",
+    "main.js": "/static/js/main.b63edc0f.js",
     "static/media/Subscribe.svg": "/static/media/Subscribe.76d0f2313dcdc1f759c0.svg",
     "static/media/Space.png": "/static/media/Space.f0c0f824060206d925f4.png",
     "static/media/Sertificate_big.svg": "/static/media/Sertificate_big.0d59b37d8e09f1cf8d8c648b78c33f16.svg",
@@ -54,11 +54,11 @@
     "static/media/PriceTop.svg": "/static/media/PriceTop.62e1178d3938130f4827.svg",
     "static/media/Shevron_up.svg": "/static/media/Shevron_up.8bcaab765c3e6180def6c2a4df635834.svg",
     "static/media/Check.svg": "/static/media/Check.1ef455351cd1a2c41c9c.svg",
-    "main.1ee9750f.css.map": "/static/css/main.1ee9750f.css.map",
-    "main.6a881c93.js.map": "/static/js/main.6a881c93.js.map"
+    "main.03b0ce04.css.map": "/static/css/main.03b0ce04.css.map",
+    "main.b63edc0f.js.map": "/static/js/main.b63edc0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ee9750f.css",
-    "static/js/main.6a881c93.js"
+    "static/css/main.03b0ce04.css",
+    "static/js/main.b63edc0f.js"
   ]
 }
