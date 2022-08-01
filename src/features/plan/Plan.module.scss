@@ -107,7 +107,7 @@
                         opacity: 0;
                     }
 
-                    60% {
+                    50% {
                         opacity: 1;
                     }
 
@@ -133,8 +133,8 @@
 
         .plan__point3 {
             position: relative;
-            top: 216px;
-            left: 904px;
+            top: 180px;
+            left: 800px;
         }
 
         .plan__paperPlane {
@@ -168,7 +168,7 @@
                 }
 
                 60% {
-                    top: 400px;
+                    top: 370px;
                     left: 1000px;
                     transform: scale(-1, 1) rotate(0deg);
                     animation-timing-function: linear;
