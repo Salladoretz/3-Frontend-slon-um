@@ -8,7 +8,7 @@ function App() {
     <div>
       <Routes>
         <Route path='slon-um' element={<AppDefault />} />
-        <Route path='slon-um' element={<AppAlt />} />
+        <Route path='slon-um-alt' element={<AppAlt />} />
       </Routes>
     </div>
   )
