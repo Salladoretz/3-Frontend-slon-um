@@ -1,14 +1,14 @@
-@import './style.scss';
+@import './styleAlt.scss';
 
-.App {
-    --mainFont: var(--mainFontRoot);
-    --secondaryFont: var(--secondaryFontRoot);
-    --mainFontColor: var(--mainFontColorRoot);
-    --secondaryFontColor: var(--secondaryFontColorRoot);
+.AppAlt {
+    --mainFont: var(--mainFontAlt);
+    --secondaryFont: var(--secondaryFontAlt);
+    --mainFontColor: var(--mainFontColorAlt);
+    --secondaryFontColor: var(--secondaryFontColorAlt);
 
-    --mainColor: var(--mainColorRoot);
-    --mainAccentColor: var(--mainAccentColorRoot);
-    --secondaryAccentColor: var(--secondaryAccentColorRoot);
+    --mainColor: var(--mainColorAlt);
+    --mainAccentColor: var(--mainAccentColorAlt);
+    --secondaryAccentColor: var(--secondaryAccentColorAlt);
 
 
     font-family: var(--mainFont);

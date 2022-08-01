@@ -34,9 +34,18 @@ const Footer = () => {
                     <a href="/">Контакты</a>
                     <a href="/">Конфиденциальность</a>
                 </div>
-                <a href='/' className={css.footer__up}>
+                <button
+                    className={css.footer__up}
+                    onClick={() => {
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }}
+                >
                     <img src={Shevron_up} alt="" />
-                </a>
+                </button>
             </div>
             <div className={css.footer__copiright}>
                 <p>@ Все права защищены.  ООО”Слонум” 2022</p>

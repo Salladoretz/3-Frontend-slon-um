@@ -1,10 +1,8 @@
-@import '../../../style.scss';
-
 .price {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid $mainAccentColor;
+    border: 3px solid var(--mainAccentColor);
     box-shadow: 0px 5px 15px #14a77233;
     border-radius: 40px;
     min-width: 490px;
@@ -19,12 +17,12 @@
         padding-top: 21px;
 
         p {
-            font-family: $mainFont;
+            font-family: var(--mainFont);
             font-size: 20px;
             line-height: 28px;
             letter-spacing: 0.04em;
             text-align: center;
-            color: $mainColor;
+            color: var(--mainColor);
         }
     }
 
@@ -35,7 +33,7 @@
         p {
             font-size: 20px;
             line-height: 24px;
-            color: $secondaryFontColor;
+            color: var(--secondaryFontColor);
         }
 
         .price__prices {
@@ -62,7 +60,7 @@
 
     .price__bottom {
         display: flex;
-        background: $mainAccentColor;
+        background: var(--mainAccentColor);
         border-bottom-left-radius: 35px;
         border-bottom-right-radius: 35px;
         width: 100%;
@@ -71,8 +69,8 @@
         justify-content: space-around;
 
         p {
-            color: $mainColor;
-            font-family: $mainFont;
+            color: var(--mainColor);
+            font-family: var(--mainFont);
             font-weight: 700;
             font-size: 20px;
             line-height: 28px;

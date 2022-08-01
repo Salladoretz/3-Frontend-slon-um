@@ -1,5 +1,3 @@
-@import '../../style.scss';
-
 .footer {
     max-width: 1920px;
     width: 100%;
@@ -8,14 +6,16 @@
 
     .footer__content {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: flex-start;
+        gap: 10px;
 
         .footer__smm {
             text-align: center;
 
             p {
-                font-family: $mainFont;
+                font-family: var(--mainFont);
                 font-size: 20px;
                 line-height: 27px;
                 letter-spacing: 0.03em;
@@ -36,12 +36,14 @@
 
         .footer__links {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 40px;
             font-weight: 700;
             font-size: 20px;
             line-height: 27px;
             letter-spacing: 0.03em;
-            color: $mainFontColor;
+            color: var(--mainFontColor);
         }
 
         .footer__up {
@@ -50,7 +52,7 @@
             justify-content: center;
             width: 56px;
             height: 56px;
-            background: $secondaryAccentColor;
+            background: var(--secondaryAccentColor);
             border-radius: 50%;
         }
     }
@@ -62,7 +64,7 @@
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0.04em;
-            color: $secondaryFontColor;
+            color: var(--secondaryFontColor);
         }
     }
 }

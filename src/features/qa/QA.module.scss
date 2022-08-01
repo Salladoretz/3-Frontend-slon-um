@@ -1,11 +1,10 @@
-@import '../../style.scss';
-
 .qa {
+    padding: 0px 10px;
     max-width: 1400px;
     width: 100%;
     text-align: center;
     margin-bottom: 200px;
-    border-bottom: 1px solid $mainFontColor;
+    border-bottom: 1px solid var(--mainFontColor);
 
     h2 {
         margin-bottom: 50px;

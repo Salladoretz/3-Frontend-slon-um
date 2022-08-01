@@ -7,13 +7,19 @@ import Picture from './picture/Picture'
 const Main = () => {
     return (
         <div className={css.main}>
+            <div className={css.main__header}>
+                <div className={css.main__logo}>
+                    <img src={Logo} alt='' />
+                    <p>Слон<span>УМ</span></p>
+                </div>
+                <button>Войти</button>
+            </div>
             <div className={css.main__container}>
+                <div className={css.main__picture}>
+                    <Picture />
+                </div>
                 <div className={css.main__info}>
-                    <div className={css.main__header}>
-                        <img src={Logo} alt='' />
-                        <p>Слон<span>УМ</span></p>
-                    </div>
-                    <div className={css.main__headline}>
+                    <div className={css.main__infoWrapper}>
                         <p className={css.main__headlineTop}>От компании СлонУМ</p>
                         <h1>Всероссийский конкурс Детского рисунка</h1>
                         <p className={css.main__headlineMiddle}>Участвуйте в конкурсе и получайте призы в различных номинациях детского рисунка для всех возрастов</p>
@@ -22,9 +28,6 @@ const Main = () => {
                             <Timer />
                         </div>
                     </div>
-                </div>
-                <div className={css.main__picture}>
-                    <Picture />
                 </div>
             </div>
             <div className={css.main__description}>

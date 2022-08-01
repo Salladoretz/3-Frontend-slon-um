@@ -1,8 +1,8 @@
-@import '../../style.scss';
-
 .sertificate {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
     max-width: 1923px;
     width: 100%;
     min-height: 636px;
@@ -11,15 +11,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-
-    .sertificate__void {
-        max-width: 214px;
-        width: 100%;
-    }
+    padding: 0px 10px;
+    gap: 10px;
 
     .sertificate__info {
         max-width: 500px;
         margin-top: 56px;
+
+        .underline {
+            text-decoration: underline #ff946e wavy 5px;
+            text-underline-offset: 4px;
+        }
 
         h2 {
             margin-bottom: 27px;
@@ -27,7 +29,7 @@
 
         p {
             font-size: 18px;
-            color: $secondaryFontColor;
+            color: var(--secondaryFontColor);
             margin-bottom: 27px;
         }
     }

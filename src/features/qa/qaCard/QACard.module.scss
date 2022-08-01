@@ -1,8 +1,6 @@
-@import '../../../style.scss';
-
 .qaCard {
     min-height: 110px;
-    border-top: 1px solid $mainFontColor;
+    border-top: 1px solid var(--mainFontColor);
     max-width: 1400px;
     width: 100%;
     display: flex;
@@ -21,14 +19,14 @@
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0.04em;
-            color: $secondaryFontColor;
+            color: var(--secondaryFontColor);
         }
 
         button {
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: $secondaryAccentColor;
+            background: var(--secondaryAccentColor);
         }
     }
 

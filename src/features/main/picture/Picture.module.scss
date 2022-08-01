@@ -1,5 +1,3 @@
-@import '../../../style.scss';
-
 .picture {
     display: flex;
     flex-direction: column;
@@ -19,6 +17,7 @@
         background-image: url('../../../assets/Space.png');
         background-repeat: no-repeat;
         background-position: top right;
+        background-size: cover;
         position: relative;
         animation: fadeIn 2s;
 
@@ -39,13 +38,13 @@
         .picture__spaceStars {
             position: absolute;
             top: 17px;
-            right: 42px;
+            right: 60px;
         }
 
         .picture__spacePlane {
-            position: absolute;
-            bottom: 319px;
-            right: 30px;
+            position: relative;
+            top: 329px;
+            left: 38%;
             animation: animationPlane 12s infinite;
 
             @keyframes animationPlane {
@@ -66,22 +65,22 @@
         .picture__spaceElephant {
             position: absolute;
             top: 225px;
-            right: 157px;
+            right: 191px;
             animation: animationElephant 12s infinite;
 
             @keyframes animationElephant {
                 0% {
-                    right: 157px;
+                    right: 191px;
                     transform: rotate(0deg);
                 }
 
                 50% {
-                    right: 147px;
+                    right: 181px;
                     transform: rotate(41deg);
                 }
 
                 100% {
-                    right: 157px;
+                    right: 191px;
                     transform: rotate(0deg);
                 }
             }
@@ -90,7 +89,7 @@
         .picture__spaceClock {
             position: absolute;
             top: 220px;
-            left: 118px;
+            right: 681px;
             animation: animationClock ease 12s infinite;
 
             @keyframes animationClock {
@@ -146,23 +145,23 @@
         .picture__spacePlanet1 {
             position: absolute;
             top: 82px;
-            left: 209px;
+            right: 600px;
             animation: animationPlanet1 12s infinite;
 
             @keyframes animationPlanet1 {
                 0% {
                     top: 82px;
-                    left: 209px;
+                    right: 600px;
                 }
 
                 50% {
                     top: 102px;
-                    left: 159px
+                    right: 650px;
                 }
 
                 100% {
                     top: 82px;
-                    left: 209px;
+                    right: 600px;
                 }
             }
         }
@@ -170,24 +169,24 @@
         .picture__spacePlanet2 {
             position: absolute;
             top: 134px;
-            left: 427px;
+            right: 405px;
             animation: animationPlanet2 12s infinite;
 
             @keyframes animationPlanet2 {
                 0% {
-                    left: 427px;
+                    right: 405px;
                 }
 
                 7% {
-                    left: 427px;
+                    right: 405px;
                 }
 
                 50% {
-                    left: 457px
+                    right: 375px;
                 }
 
                 100% {
-                    left: 427px;
+                    right: 405px;
                 }
             }
         }
@@ -195,7 +194,7 @@
         .picture__spacePlanet3 {
             position: absolute;
             bottom: 182px;
-            left: 318px;
+            right: 522px;
             animation: animationPlanet3 12s infinite;
 
             @keyframes animationPlanet3 {
@@ -214,9 +213,9 @@
         }
 
         .picture__spaceAtom {
-            position: absolute;
+            position: sticky;
             top: 132px;
-            left: 75px;
+            right: 757px;
             animation: animationAtom 12s infinite;
 
             @keyframes animationAtom {
@@ -239,7 +238,7 @@
         .picture__spaceZero {
             position: absolute;
             top: 260px;
-            right: 110px;
+            right: 145px;
             font-family: 'Inter';
             font-size: 26px;
             line-height: 31px;
@@ -250,7 +249,7 @@
         .picture__spaceOne {
             position: absolute;
             top: 209px;
-            right: 44px;
+            right: 57px;
             font-family: 'Inter';
             font-size: 26px;
             line-height: 31px;
@@ -261,7 +260,7 @@
         .picture__spaceSegmentation {
             position: absolute;
             top: 185px;
-            right: 332px;
+            right: 350px;
             animation: animationSegmentation 12s infinite;
 
             @keyframes animationSegmentation {
@@ -290,7 +289,7 @@
         .picture__spacePlus {
             position: absolute;
             top: 241px;
-            right: 420px;
+            right: 435px;
             animation: animationPlus 12s infinite;
 
             @keyframes animationPlus {
@@ -320,7 +319,7 @@
         .picture__spacePalette {
             position: absolute;
             top: 119px;
-            right: 89px;
+            right: 99px;
             animation: animationPalette 12s infinite;
 
             @keyframes animationPalette {
@@ -346,7 +345,7 @@
         .picture__spaceRocket {
             position: absolute;
             bottom: 200px;
-            left: 88px;
+            right: 606px;
             animation: animationRocket 12s ease-out infinite;
 
             @keyframes animationRocket {
@@ -368,7 +367,7 @@
         .picture__spaceBalloon {
             position: absolute;
             top: 280px;
-            left: 359px;
+            right: 462px;
             animation: animationBalloon 12s infinite;
 
             @keyframes animationBalloon {
@@ -385,17 +384,6 @@
                 }
 
             }
-        }
-
-        button {
-            width: 180px;
-            height: 44px;
-            margin-top: 33px;
-            border: 1px solid $mainFontColor;
-            border-radius: 15px;
-            background: $mainColor;
-            color: $mainFontColor;
-            font-weight: 400;
         }
     }
 

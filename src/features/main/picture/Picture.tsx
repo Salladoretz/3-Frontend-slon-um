@@ -32,7 +32,6 @@ const Picture = () => {
     return (
         <div className={css.picture}>
             <div className={css.picture__space}>
-                <button>Войти</button>
                 <img className={css.picture__spaceStars} src={Stars} alt="" />
                 <img className={css.picture__spacePlane} src={Plane} alt="" />
                 <img className={css.picture__spaceElephant} src={Elephant} alt="" />

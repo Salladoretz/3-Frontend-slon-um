@@ -1,49 +1,84 @@
-@import '../../style';
-
 .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    position: relative;
+
+    .main__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1395px;
+        width: 100%;
+        min-height: 50px;
+        position: absolute;
+        top: 30px;
+        padding: 0px 10px;
+        z-index: 100;
+
+        .main__logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 50px;
+                height: 50px;
+                margin-right: 5px;
+            }
+
+            p {
+                font-family: var(--secondaryFont);
+                font-weight: 500;
+                font-size: 34.125px;
+                line-height: 40px;
+            }
+
+            span {
+                color: var(--secondaryAccentColor);
+                font-weight: 400;
+            }
+        }
+
+        button {
+            width: 180px;
+            height: 44px;
+            border: 1px solid var(--mainFontColor);
+            border-radius: 15px;
+            background: var(--mainColor);
+            color: var(--mainFontColor);
+            font-weight: 400;
+
+        }
+    }
 
     .main__container {
         display: flex;
-        justify-content: right;
+        align-items: center;
+        flex-direction: row-reverse;
         margin-bottom: 200px;
+        width: 100%;
+        justify-content: right;
+        padding-left: 20px;
+
+        @media screen and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
 
         .main__info {
-            max-width: 653px;
-            height: 810px;
+            max-height: 810px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: end;
+            align-items: center;
+            padding-top: 80px;
+            width: 100%;
+            z-index: 100;
 
-            .main__header {
-                display: flex;
-                align-items: center;
-                margin-top: 30px;
-
-                img {
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 5px;
-                }
-
-                p {
-                    font-family: $secondaryFont;
-                    font-weight: 500;
-                    font-size: 34.125px;
-                    line-height: 40px;
-                }
-
-                span {
-                    color: $secondaryAccentColor;
-                    font-weight: 400;
-                }
-            }
-
-            .main__headline {
-                margin-bottom: 80px;
+            .main__infoWrapper {
 
                 .main__headlineTop {
-                    font-family: $secondaryFont;
+                    font-family: var(--secondaryFont);
                     font-size: 15px;
                     line-height: 166%;
                     letter-spacing: 0.08em;
@@ -51,13 +86,18 @@
                     color: #9FA0A7;
                 }
 
+                h1 {
+                    max-width: 653px;
+                }
+
                 .main__headlineMiddle {
-                    font-family: $secondaryFont;
-                    color: $secondaryFontColor;
+                    font-family: var(--secondaryFont);
+                    color: var(--secondaryFontColor);
                     font-size: 18px;
                     line-height: 150%;
                     letter-spacing: 0.05em;
                     margin: 40px 0px 60px 0px;
+                    max-width: 570px;
                 }
 
                 .main__headlineBottom {
@@ -65,11 +105,11 @@
                     gap: 60px;
                 }
             }
-
         }
 
         .main__picture {
-            width: 882px;
+            max-width: 882px;
+            width: 100%;
             height: 810px;
         }
     }
@@ -85,12 +125,12 @@
             }
 
             :nth-child(2) {
-                color: $mainAccentColor;
+                color: var(--mainAccentColor);
                 font-weight: 500;
             }
 
             :nth-child(3) {
-                color: $mainAccentColor;
+                color: var(--mainAccentColor);
                 font-weight: 500;
             }
         }

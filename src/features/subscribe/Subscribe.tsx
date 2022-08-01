@@ -15,9 +15,7 @@ const Subscribe = () => {
             <div className={css.agreement}>
                 <input type="checkbox" />
                 <p>Отправляя данные, я соглашаюсь с
-                    <a href="/"> Условиями конкурса</a>
-                    <br></br>
-                    и <a href="/"> Политикой обработки данных</a></p>
+                    <a href="/"> Условиями конкурса</a> и <a href="/"> Политикой обработки данных</a></p>
             </div>
         </div>
     )

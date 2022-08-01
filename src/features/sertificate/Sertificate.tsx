@@ -11,7 +11,6 @@ const Sertificate = () => {
                 <p>Скачать диплом можно будет в личном кабинете через сутки после окончания конкурса, дополнительно вышлем его на e-mail.</p>
                 <p>Со слоном к победам напролом!</p>
             </div>
-            <div className={css.sertificate__void}></div>
             <div className={css.sertificate__picture}>
                 <img src={Sertificate_big} alt="" />
             </div>

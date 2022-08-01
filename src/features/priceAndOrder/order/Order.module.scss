@@ -1,5 +1,3 @@
-@import '../../../style.scss';
-
 .order {
     .order__inputs {
         display: flex;
@@ -9,14 +7,56 @@
 
         input {
             height: 60px;
+            max-width: 540px;
             border: 1px solid #9FA0A7;
             border-radius: 15px;
             padding-left: 20px;
-            font-family: $secondaryFont;
+            font-family: var(--secondaryFont);
             font-size: 20px;
             line-height: 24px;
             letter-spacing: 0.04em;
-            color: $secondaryFontColor;
+            color: var(--secondaryFontColor);
+        }
+    }
+
+    .agreement {
+        max-width: 483px;
+        width: 100%;
+        display: flex;
+        gap: 17px;
+        margin: 50px 0px;
+
+        input[type='checkbox'] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1.5px solid var(--mainAccentColor);
+            border-radius: 6px;
+            background: white;
+        }
+
+        input[type='checkbox']:checked {
+            background-image: url('../../../assets/Check.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 14px 14px;
+            background-color: var(--mainAccentColor);
+            border: 2px solid var(--mainAccentColor);
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            color: #9FA0A7;
+
+            a {
+                color: var(--mainAccentColor);
+                text-decoration: underline 1px var(--mainAccentColor);
+            }
         }
     }
 
@@ -122,8 +162,8 @@
             @keyframes animationPaperPlane3 {
                 0% {
                     transform: rotate(-20deg);
-                    right: -250px;
-                    bottom: 150px;
+                    right: -200px;
+                    bottom: 100px;
                     animation-timing-function: ease-in;
                 }
 

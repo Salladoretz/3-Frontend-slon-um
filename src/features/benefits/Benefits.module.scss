@@ -1,5 +1,3 @@
-@import '../../style.scss';
-
 .benefits {
     margin-top: 200px;
     max-width: 1916px;
@@ -15,16 +13,18 @@
         align-items: center;
         min-height: 602px;
 
+        .underline {
+            text-decoration: underline #ff946e wavy 5px;
+            text-underline-offset: 4px;
+        }
 
         .benefits__cards {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
             margin-top: 58px;
             max-width: 1395px;
         }
     }
-
-
-
 }

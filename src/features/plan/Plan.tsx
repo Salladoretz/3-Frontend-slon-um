@@ -25,8 +25,8 @@ const Plan = () => {
                         <span>Здесь</span>
                     </a> или в Личном кабинете</p>
                 </div>
+                <img className={css.plan__paperPlane} src={PaperPlane1} alt="" />
             </div>
-            <img className={css.plan__paperPlane} src={PaperPlane1} alt="" />
         </div>
     )
 }
