@@ -15,8 +15,8 @@ root.render(
     <BrowserRouter>
       <Provider store={store}>
         <Routes>
-          <Route path='SlonUm' element={<App />} />
-          <Route path='SlonUmAlt' element={<AppAlt />} />
+          <Route path='slon-um' element={<App />} />
+          <Route path='slon-um-alt' element={<AppAlt />} />
         </Routes>
       </Provider>
     </BrowserRouter>
