@@ -3,6 +3,7 @@ import css from './Main.module.scss'
 import Logo from '../../assets/Logo.svg'
 import Timer from './timer/Timer'
 import Picture from './picture/Picture'
+import { Link } from 'react-router-dom'
 
 const Main = () => {
     return (
@@ -12,7 +13,9 @@ const Main = () => {
                     <img src={Logo} alt='' />
                     <p>Слон<span>УМ</span></p>
                 </div>
-                <button>Войти</button>
+                <Link to='3-Frontend-slonUm-alt'>
+                    <button>Войти</button>
+                </Link>
             </div>
             <div className={css.main__container}>
                 <div className={css.main__picture}>

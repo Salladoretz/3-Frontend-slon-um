@@ -8,11 +8,11 @@ function App() {
 
   const routes = useRoutes([
     {
-      path: '3-Frontend-slonUm',
+      path: '/',
       element: <AppDefault />
     },
     {
-      path: '3-Frontend-slonUm/alt',
+      path: '3-Frontend-slonUm-alt',
       element: <AppAlt />
     }
   ])
