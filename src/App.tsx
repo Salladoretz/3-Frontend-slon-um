@@ -7,8 +7,8 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path='3' element={<AppDefault />} />
-        <Route path='3-Frontend-slonUm' element={<AppAlt />} />
+        <Route path='3-Frontend-slonUm/' element={<AppDefault />} />
+        <Route path='3-Frontend-slonUm/alt/' element={<AppAlt />} />
       </Routes>
     </div>
   )
