@@ -12,7 +12,7 @@ function App() {
       element: <AppDefault />
     },
     {
-      path: '3-Frontend-slonUm-alt',
+      path: '/alt',
       element: <AppAlt />
     }
   ])

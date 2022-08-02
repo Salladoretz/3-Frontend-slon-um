@@ -13,7 +13,7 @@ const Main = () => {
                     <img src={Logo} alt='' />
                     <p>Слон<span>УМ</span></p>
                 </div>
-                <Link to='3-Frontend-slonUm-alt'>
+                <Link to='alt'>
                     <button>Войти</button>
                 </Link>
             </div>
