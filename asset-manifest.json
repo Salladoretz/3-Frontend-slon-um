@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/3-Frontend-slonUm/static/css/main.e21e55c5.css",
+    "main.css": "/3-Frontend-slonUm/static/css/main.6421d043.css",
     "main.js": "/3-Frontend-slonUm/static/js/main.f81540f9.js",
     "static/media/Subscribe.svg": "/3-Frontend-slonUm/static/media/Subscribe.76d0f2313dcdc1f759c0.svg",
     "static/media/Space.png": "/3-Frontend-slonUm/static/media/Space.f0c0f824060206d925f4.png",
@@ -53,11 +53,11 @@
     "static/media/Shadow.svg": "/3-Frontend-slonUm/static/media/Shadow.221d2c35504b9658f7edec17d5674756.svg",
     "static/media/Shevron_up.svg": "/3-Frontend-slonUm/static/media/Shevron_up.8bcaab765c3e6180def6c2a4df635834.svg",
     "static/media/Check.svg": "/3-Frontend-slonUm/static/media/Check.1ef455351cd1a2c41c9c.svg",
-    "main.e21e55c5.css.map": "/3-Frontend-slonUm/static/css/main.e21e55c5.css.map",
+    "main.6421d043.css.map": "/3-Frontend-slonUm/static/css/main.6421d043.css.map",
     "main.f81540f9.js.map": "/3-Frontend-slonUm/static/js/main.f81540f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e21e55c5.css",
+    "static/css/main.6421d043.css",
     "static/js/main.f81540f9.js"
   ]
 }
