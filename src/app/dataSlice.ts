@@ -38,7 +38,7 @@ const initialState: dataState = {
         ok: '/',
         telegram: '/'
     },
-    deadline: new Date('September 1, 2022 10:00:00 +0300'),
+    deadline: new Date('September 1, 2023 10:00:00 +0300'),
     benefits: [
         {
             icon: Star,
